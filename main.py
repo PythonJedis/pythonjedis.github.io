@@ -17,7 +17,7 @@ def trim(include, conditions):
 	return text
 
 def getlines(file):
-	main = open('templates/{0}'.format(file))
+	main = open('templates~/{0}'.format(file))
 	lines = main.readlines()
 	main.close()
 
@@ -28,13 +28,13 @@ def parsehtml(lines):
 	for line in lines:
 		if BEGIN_TOKEN in line and END_TOKEN in line:
 			file = trim(line, conditions)
-			with open('templates/includes/{0}'.format(file), 'r') as f:
+			with open('templates~/includes/{0}'.format(file), 'r') as f:
 				inc_files[line_c] = f.read()
 			lines[line_c] = inc_files[line_c]
 			#print(file)
 		line_c += 1
 
-inc_path = 'templates'
+inc_path = 'templates~'
 files = [f for f in listdir(inc_path) if isfile(join(inc_path, f))]
 
 for file in files:
