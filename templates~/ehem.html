@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+  <!-- This tells the browser how to read the document. -->
+  <%= "head.html" %>
+
+  <meta charset="utf-8">
+
+  <!-- Tells the browser what the title of this page should be. -->
+  <title>Locations</title>
+
+  <!-- Load the page styles. -->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery.js"></script>
+
+  <!-- More on helper.js in the class -->
+  <script src="js/helper.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+  <meta name="viewport" content="width=device-width">
+</head>
+<body unresolved>
+
+<%= "header.html" %>
+
+  <div id="main">
+	<div id="mapDiv">
+      <h1>Where We Live</h1>
+    </div>
+
+  </div>
+
+  <script src="js/Builder.js"></script>
+
+  <script type="text/javascript">
+
+    if(document.getElementById('map') === null) {
+      document.getElementById('mapDiv').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

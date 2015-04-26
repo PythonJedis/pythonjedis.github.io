@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+  <!-- This tells the browser how to read the document. -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Python Jedis | Study Group</title>
+<link rel="stylesheet" href="assets/css/foundation.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<script src="assets/js/vendor/modernizr.js"></script>
+  <meta charset="utf-8">
+
+  <!-- Tells the browser what the title of this page should be. -->
+  <title>Locations</title>
+
+  <script src="assets/js/vendor/jquery.js"></script>
+
+  <!-- More on helper.js in the class -->
+  <script src="assets/js/ehem/helper.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+  <meta name="viewport" content="width=device-width">
+</head>
+<body unresolved>
+
+<div class="row">
+	<div class="large-12 columns">
+		<div class="nav-bar right">
+			<ul class="button-group">
+				<li><a href="index.html" class="button">Home</a></li>
+				<li><a href="http://github.com/PythonJedis" class="button">Github</a></li>
+			</ul>
+		</div>
+		<h1>Python Jedis <small>Pythonistas of all flavors.</small></h1>
+		<hr/>
+	</div>
+</div>
+  <div id="main">
+	<div id="mapDiv">
+      <h3>Where We Live</h3>
+    </div>
+
+  </div>
+
+  <script src="assets/js/ehem/Builder.js"></script>
+
+  <script type="text/javascript">
+
+    if(document.getElementById('map') === null) {
+      document.getElementById('mapDiv').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
