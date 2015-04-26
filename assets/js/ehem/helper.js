@@ -1,4 +1,4 @@
-var googleMap = '<div id="map" class="large-9 columns"></div>';
+var googleMap = '<div id="map"></div>';
 
 
 
