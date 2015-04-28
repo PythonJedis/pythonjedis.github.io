@@ -3,3 +3,19 @@
 	border-radius: 100px;
 	padding: 5%;
 }
+
+
+#map {
+  padding: 5%;
+  height: 100%;
+  align-self: center;
+}
+
+#mapDiv {
+  padding: 5%;
+  height: 700px;
+  align-self: center;
+  display: block;
+  position: relative;
+}
+
