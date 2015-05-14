@@ -16,7 +16,7 @@ This website uses a hacky, homebrewed static site generator written in python. B
 +-- main.py
 ```
 
-Everything you will be editing to change the site, will be in the templates~ folder (The tilde is there to denote a hidden or working directory). This is plain old html/css/js. The tricky part is pretending like these files are in the root directory, so in order to access the assets folder, you just type something like <img src="/assets/img/stuff.png">. 
+Everything you will be editing to change the site, will be in the templates~ folder (The tilde is there to denote a hidden or working directory). This is plain old html/css/js. The tricky part is pretending like these files are in the root directory, so in order to access the assets folder, you just type something like `<img src="/assets/img/stuff.png">.` 
 Using a templates directory like this allows us to add some preprocessing to our site, so that we can have file includes. This is handy because we can type <%= "header.html" %> and only edit one header.html file. Once we run main.py, all changes to the header will reflect across all the different files that include it.
 
 That part of the program is a bit buggy because we are using readlines instead of by character. So for the time being, make sure you type out <%= "file.ext" %> like that all on one line. The program then goes and finds "file.ext" and copies it's contents to the main file.
